@@ -42,7 +42,7 @@ export const config = {
   CALLBACK_USERS: [
     {
       // 一般都填自己
-      name: "自己",
+      name: "吴茂彰",
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "oZPn456WzJwCDb81ovHWxPmrad6A",
     }, 
@@ -68,7 +68,7 @@ export const config = {
    * 节日时，name填写相应展示的节日，你可以填“被搭讪纪念日”
    */
   FESTIVALS: [
-    {"节日": "中秋节", "name": "老婆", "year": "1996", "date": "09-02"},
+    {"节日": "中秋节", "梁萱": "老婆", "year": "2022", "date": "09-02"},
    
   ],
 

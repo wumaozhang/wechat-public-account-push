@@ -63,7 +63,7 @@ export const config = {
    */
 
   // 回调消息模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "zjV1glIuCXo4Csr23aXWEio1iP74sZJ7IQEES95lDsg6c4yOU",
+  CALLBACK_TEMPLATE_ID: "9nqmHucU6eEyetDOo4V48PBoGRwmxZhr4eQAcA0a34A",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -71,7 +71,7 @@ export const config = {
       // 一般都填自己
       name: "自己",
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "ohx12OO6VskYv03Kuf43ywIZVRM4puXhk",
+      id: "oZPn456WzJwCDb81ovHWxPmrad6A",
     }, 
   ],
     
@@ -114,17 +114,7 @@ export const config = {
     * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
     * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }} 
     * */
-  CUSTOMIZED_DATE_LIST: [
-    // 在一起的日子
-    {"keyword": "love_day", date: "2015-05-01"},
-    // 结婚纪念日
-    {"keyword": "marry_day", date: "2020-01-04"},
-    // 退伍日, 不用可以删掉
-    {"keyword": "ex_day", date: "2022-08-31"},
-    // sakana日
-    // {"keyword": "sakana_day", date: "2022-01-06"},
-    // ... 
-  ],
+  
 
   /** 插槽 */
 
@@ -148,7 +138,7 @@ export const config = {
 
   // 好文节选的内容类型
   // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
-  LITERARY_PREFERENCE: ""
+  LITERARY_PREFERENCE: "小说"
 
 
 }

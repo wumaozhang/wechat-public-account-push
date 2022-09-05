@@ -16,9 +16,9 @@ export const config = {
    *    // 想要发送的人的名字
    *    name: "老婆0",
    *    // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-   *    id: "oZPn456WzJwCDb81ovHWxPmrad6A",
+   *    id: "ohxOO6VskYv0Kuf-ywIZVRMpuXhk",
    *    // 你想对他发送的模板消息的模板ID
-   *    useTemplateId: "MyDSJfPxa1xiX2i6N0fRSES__btuUHl9Adv5UHkpUbE",
+   *    useTemplateId: "zjVglIuCXo4CsraXWEio1iP7sZJ7IQEES9lDsgc4yOU",
    *    // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
    *    openUrl: "https://wangxinleo.cn"
    *   }, 
@@ -31,15 +31,15 @@ export const config = {
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "oZPn457Mqw1TxftCIgliu6F7KFWw",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "s4uRye7nauRw7OaoU14V2qhOwfFU5m26LkxPVvyOBso",
+      useTemplateId: "epMnZhEl7S61uYunzOCEIL_x0M_WSHxSRkae9XrFFDA",
       // 所在省份
-      province: "天津",
+      province: "广东",
       // 所在城市
-      city: "蓟州",
+      city: "肇庆",
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
       openUrl: "https://wangxinleo.cn"
     }, 
-    
+   
   ],
 
   /**
@@ -47,7 +47,7 @@ export const config = {
    */
 
   // 回调消息模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: "s4uRye7nauRw7OaoU14V2qhOwfFU5m26LkxPVvyOBso",
+  CALLBACK_TEMPLATE_ID: "epMnZhEl7S61uYunzOCEIL_x0M_WSHxSRkae9XrFFDA",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -63,7 +63,12 @@ export const config = {
    * 信息配置
    */
 
- 
+  /** 天气相关 */
+
+  // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
+  PROVINCE: "广东",
+  // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
+  CITY: "惠州",
 
   /** 重要节日相关 */
 
@@ -75,8 +80,8 @@ export const config = {
    */
   FESTIVALS: [
     {"节日": "生日", "name": "老婆", "year": "1996", "date": "09-02"},
-    {"节日": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
-    {"生日": "生日", "name": "李四", "year": "1996", "date": "09-31"},
+    {"生日": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+    {"节日": "生日", "name": "李四", "year": "1996", "date": "09-31"},
     {"生日": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
   ],
 
@@ -85,7 +90,7 @@ export const config = {
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
- 
+  FESTIVALS_LIMIT: 4,
 
   /** 日期相关 */
 
@@ -93,7 +98,17 @@ export const config = {
     * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
     * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }} 
     * */
- 
+  CUSTOMIZED_DATE_LIST: [
+    // 在一起的日子
+    {"keyword": "love_day", date: "2015-05-01"},
+    // 结婚纪念日
+    {"keyword": "marry_day", date: "2020-01-04"},
+    // 退伍日, 不用可以删掉
+    {"keyword": "ex_day", date: "2022-08-31"},
+    // sakana日
+    // {"keyword": "sakana_day", date: "2022-01-06"},
+    // ... 
+  ],
 
   /** 插槽 */
 
@@ -118,6 +133,4 @@ export const config = {
   // 好文节选的内容类型
   // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
   LITERARY_PREFERENCE: ""
-
-
 }

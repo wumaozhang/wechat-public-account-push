@@ -33,7 +33,7 @@ export const config = {
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "epMnZhEl7S61uYunzOCEIL_x0M_WSHxSRkae9XrFFDA",
       // 所在省份
-      province: "天津",
+      province: "广东",
       // 所在城市
       city: "肇庆",
       
@@ -65,7 +65,7 @@ export const config = {
   /** 天气相关 */
 
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "天津",
+  PROVINCE: "广东",
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
   CITY: "肇庆",
 
